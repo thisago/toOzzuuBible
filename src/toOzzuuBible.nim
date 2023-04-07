@@ -11,15 +11,18 @@ proc find(w: Window, text: cstring, caseSensitive = false,
   ## Waiting merging of https://github.com/nim-lang/Nim/pull/21621
 proc deleteContents(r: Range) {.importCpp.}
 proc empty(r: Selection) {.importCpp.}
+proc scroll(r: Window; x, y: int) {.importCpp.}
 
 proc main =
   ## Main function
+  let currScroll = int window.scrollY
+  echo window.scrollY
   for enclosed in getAllEnclosedText($document.body.innerText):
     for text in enclosed.data.texts:
       for verse in text.parseBibleVerses:
         if verse.parsed.error:
           continue
-        echo verse.raw
+        echo "Found: ", verse.raw
         while window.find cstring verse.raw:
           let
             selection = document.getSelection
@@ -34,7 +37,8 @@ proc main =
           link.setAttribute("title", verse.raw)
           link.setAttribute("class", "toOzzuuBible")
           rng.insertNode link
-          echo "matched: ", verse.raw
+          echo "  matched: ", verse.raw
+  window.scroll(0, currScroll)
 
 document.addEventListener("DOMContentLoaded", proc (ev: Event) =
   # Styling
@@ -43,5 +47,6 @@ document.addEventListener("DOMContentLoaded", proc (ev: Event) =
   style.innerHTML = css.`$`.decode.cstring
   document.head.appendChild style
   
-  discard setTimeout(main, 500)
+  # main()
+  discard setTimeout(main, 0)
 )

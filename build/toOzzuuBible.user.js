@@ -2,7 +2,7 @@
 // @name To Ozzuu Bible
 // @namespace https://git.ozzuu.com/thisago/gm_api
 // @description A userscript that allows you go to the Ozzuu Bible in any biblical reference in any site!
-// @version 0.1.0
+// @version 0.2.0
 // @author Thiago Navarro
 // @homepageURL https://git.ozzuu.com/thisago/toOzzuuBible
 // @match *://*/*

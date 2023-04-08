@@ -16,13 +16,11 @@ proc scroll(r: Window; x, y: int) {.importCpp.}
 proc main =
   ## Main function
   let currScroll = int window.scrollY
-  echo window.scrollY
   for enclosed in getAllEnclosedText($document.body.innerText):
     for text in enclosed.data.texts:
       for verse in text.parseBibleVerses:
         if verse.parsed.error:
           continue
-        echo "Found: ", verse.raw
         while window.find cstring verse.raw:
           let
             selection = document.getSelection
@@ -37,7 +35,6 @@ proc main =
           link.setAttribute("title", verse.raw)
           link.setAttribute("class", "toOzzuuBible")
           rng.insertNode link
-          echo "  matched: ", verse.raw
   window.scroll(0, currScroll)
 
 document.addEventListener("DOMContentLoaded", proc (ev: Event) =

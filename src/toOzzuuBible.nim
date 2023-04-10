@@ -21,7 +21,6 @@ var processedVerses = 0
 
 proc main =
   ## Main function
-  processedVerses = 0
   let currScroll = int window.scrollY
   for enclosed in getAllEnclosedText($document.body.innerText):
     for text in enclosed.data.texts:

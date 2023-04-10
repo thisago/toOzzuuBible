@@ -3,6 +3,14 @@
 This is a userscript that allows you go to Ozzuu Bible in any biblical reference
 in any site!
 
+All verses are searched inside of inside of `()`, `[]`, `{}`, `""` and `<>` [*](https://git.ozzuu.com/thisago/util/#func-getallenclosedtext-s-string-level-0-seq-tuple-chars-string-data-enclosedtext)
+
+## Features
+
+- Parses all found verses when pressing `F4`
+- Optionally parses automatically all found verses
+- Count how many verses was found
+
 ## Installation
 
 1. Install a userscript manager like Violentmonkey

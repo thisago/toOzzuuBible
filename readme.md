@@ -12,7 +12,7 @@ All verses are searched inside of `()`, `[]`, `{}`, `""` and `<>` [*](https://gi
 ## Features
 
 - Parses all found verses when pressing `F4`
-- Optionally parses automatically all found verses
+- Can parse all verses automatically
 - Count how many verses was found
 
 ## Installation

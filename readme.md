@@ -4,10 +4,10 @@ This is a userscript that allows you go to Ozzuu Bible in any biblical reference
 in any site!
 
 ![](images/before.png "before")
-**==>**
+**to**
 ![](images/after.png "after")
 
-All verses are searched inside of inside of `()`, `[]`, `{}`, `""` and `<>` [*](https://git.ozzuu.com/thisago/util/#func-getallenclosedtext-s-string-level-0-seq-tuple-chars-string-data-enclosedtext)
+All verses are searched inside of `()`, `[]`, `{}`, `""` and `<>` [*](https://git.ozzuu.com/thisago/util/#func-getallenclosedtext-s-string-level-0-seq-tuple-chars-string-data-enclosedtext)
 
 ## Features
 

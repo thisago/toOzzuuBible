@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 0.3.0 (2023/04/10)
+
+- Added a shortcut to run again (Ctrl+M) #2
+
 ## Version 0.2.0 (2023/04/07)
 
 - Fixed verse identifying

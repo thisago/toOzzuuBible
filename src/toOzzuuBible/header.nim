@@ -6,7 +6,7 @@ const userscriptHeader* = genMetadataBlock(
   match = [
     "*://*/*",
   ],
-  version = "0.2.0",
+  version = "0.3.0",
   runAt = GmRunAt.docStart,
   downloadUrl = "https://git.ozzuu.com/thisago/toOzzuuBible/raw/branch/master/build/toOzzuuBible.user.js",
   description = "A userscript that allows you go to the Ozzuu Bible in any biblical reference in any site!",

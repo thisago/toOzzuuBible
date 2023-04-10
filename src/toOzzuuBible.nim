@@ -44,6 +44,10 @@ document.addEventListener("DOMContentLoaded", proc (ev: Event) =
   style.innerHTML = css.`$`.decode.cstring
   document.head.appendChild style
   
-  # main()
   discard setTimeout(main, 0)
+  document.addEventListener("keydown", proc (event: Event) =
+    let ev = cast[KeyboardEvent](event)
+    if ev.ctrlKey and ev.key == "m":
+      main()
+  )
 )

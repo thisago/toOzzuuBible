@@ -1,14 +1,23 @@
 import pkg/gm_api/metadata
 
+const
+  repo = "https://git.ozzuu.com/thisago/toOzzuuBible"
+  scriptUrl = repo & "/raw/branch/master/build/toOzzuuBible.user.js"
+
 const userscriptHeader* = genMetadataBlock(
   name = "To Ozzuu Bible",
   author = "Thiago Navarro",
-  match = [
-    "*://*/*",
-  ],
   version = "0.3.0",
   runAt = GmRunAt.docStart,
-  downloadUrl = "https://git.ozzuu.com/thisago/toOzzuuBible/raw/branch/master/build/toOzzuuBible.user.js",
+  downloadUrl = scriptUrl,
+  # updateUrl = scriptUrl,
   description = "A userscript that allows you go to the Ozzuu Bible in any biblical reference in any site!",
-  homepageUrl = "https://git.ozzuu.com/thisago/toOzzuuBible",
+  homepageUrl = repo,
+  grant = [
+    GmPermitions.getValue,
+    GmPermitions.setValue,
+    GmPermitions.registerMenuCommand,
+    GmPermitions.notification
+  ],
+
 )

@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 0.4.0 (2023/04/10)
+
+- Added a button to disable autorun in menu
+- Added a button to show the processed verses count 
+- Changed the keyboard shortcut to `F4` because `Ctrl+M` was creating a
+  unintentional action
+
 ## Version 0.3.0 (2023/04/10)
 
 - Added a shortcut to run again (Ctrl+M) #2

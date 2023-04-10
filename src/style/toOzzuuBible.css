@@ -1,0 +1,1 @@
+.toOzzuuBible{position:relative}.toOzzuuBible::before{content:"";position:absolute;width:103%;height:.1em;background:rgba(51,153,153,.2);transition:.5s !important;bottom:0em;border-radius:1em;padding:.1em;left:-0.1em}.toOzzuuBible:hover{text-decoration:none}.toOzzuuBible:hover::before{height:1.2em}

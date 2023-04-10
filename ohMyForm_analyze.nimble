@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.3.0"
+version       = "0.4.0"
 author        = "Thiago Navarro"
 description   = "A userscript that allows you go to the Ozzuu Bible in any biblical reference in any site!"
 license       = "MIT"
@@ -15,7 +15,7 @@ backend = "js"
 requires "nim >= 1.6.4"
 
 requires "util"
-requires "gm_api"
+requires "gm_api >= 0.3.1"
 requires "bibleTools >= 1.2.4"
 
 import src/toOzzuuBible/header

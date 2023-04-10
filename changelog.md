@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 0.4.1 (2023/04/10)
+
+- Autorun enabled by default
+- Added `@updateURL` value to userscript metadata
+
 ## Version 0.4.0 (2023/04/10)
 
 - Added a button to disable autorun in menu

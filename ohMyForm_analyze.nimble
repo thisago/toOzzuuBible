@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.4.0"
+version       = "0.4.1"
 author        = "Thiago Navarro"
 description   = "A userscript that allows you go to the Ozzuu Bible in any biblical reference in any site!"
 license       = "MIT"

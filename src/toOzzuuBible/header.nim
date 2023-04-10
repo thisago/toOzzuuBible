@@ -7,10 +7,10 @@ const
 const userscriptHeader* = genMetadataBlock(
   name = "To Ozzuu Bible",
   author = "Thiago Navarro",
-  version = "0.3.0",
+  version = "0.4.1",
   runAt = GmRunAt.docStart,
   downloadUrl = scriptUrl,
-  # updateUrl = scriptUrl,
+  updateUrl = scriptUrl,
   description = "A userscript that allows you go to the Ozzuu Bible in any biblical reference in any site!",
   homepageUrl = repo,
   grant = [

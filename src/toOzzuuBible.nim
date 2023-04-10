@@ -47,7 +47,7 @@ proc main =
 
 const autorunKey = cstring "autorun"
 proc isAutorunOn: Future[bool] {.async, inline.} =
-  result = (await Gm.getValue autorunKey) == cstring "true"
+  result = (await Gm.getValue autorunKey) != cstring "false"
 
 proc setup {.async.} =
   ## Async setup
